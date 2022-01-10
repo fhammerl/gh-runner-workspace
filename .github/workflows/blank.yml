@@ -9,8 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: GH workspace
+      - name: github.workspace
         run: echo ${{ github.workspace }}
 
-      - name: GH workspace
+      - name: runner.workspace
         run: echo ${{ runner.workspace }}
