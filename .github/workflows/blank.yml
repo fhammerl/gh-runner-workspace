@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GH workspace
+        run: echo ${{ github.workspace }}
+
+      - name: GH workspace
+        run: echo ${{ runner.workspace }}
